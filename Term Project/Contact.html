@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <title>Contact Page</title>
+
+<style>
+    body, html {
+        height: 100%;
+        margin: 0%;
+        font-family:inherit;
+        text-align: center;
+      }
+    
+      .content {
+      max-width: 2000px;
+      margin: auto;
+      background: white;
+      padding: 10px;
+    }
+
+    .center {
+  margin-left: auto;
+  margin-right: auto;
+}   
+
+input[type=submit] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color:rgb(230, 21, 21);
+  color: white;
+}
+
+.footer {
+   position:static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+table, th, td {
+  padding: 20px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 20px;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+ 
+    </style>
+    </head>
+<body>
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button"><b>Athens</b> Food God.</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right">
+        <a href="Souvlaki.html" class="w3-bar-item w3-button">Souvlaki</a>
+        <a href="Burgers.html" class="w3-bar-item w3-button">Burgers</a>
+        <a href="Pizza.html" class="w3-bar-item w3-button">Pizza</a>
+        <a href="Japanese.html" class="w3-bar-item w3-button">Japanese </a>
+        <a href="Italian.html" class="w3-bar-item w3-button">Italian  </a>
+        <a href="Chinese.html" class="w3-bar-item w3-button">Chinese </a>
+        <a href="Mexican.html" class="w3-bar-item w3-button">Mexican</a>
+        <a href="Greek.html" class="w3-bar-item w3-button">Greek </a>
+        <a href="Vegan.html" class="w3-bar-item w3-button">Vegan</a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">Unique</button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Unique1.html" class="w3-bar-item w3-button">#1 Restaurant</a>
+            <a href="Unique2.html" class="w3-bar-item w3-button">#2 Restaurant</a>
+          </div>
+        </div>
+        <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>
+        <a href="About.html" class="w3-bar-item w3-button">About</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <!--Form Starts Here -->
+  <div class="content">
+  <h1>CONTACT</h1>
+  <hr style="height:2px; width:2px;border-color:red;background-color:red;width:50%">  <p>We Would 	&#9829; To Hear From You!</p>
+  </div>
+
+  <div class="Form">
+    <form action="mailer.php">
+        
+        <p>If you would like to reach out to us <b>PLEASE DO</b>! Feel free to ask any questions about the restaurants or website. We love to hear feedback from users about the restaurants or reccomendations about hidden gems in Athens!</p>
+    <p>First Name
+        <input type="text" name="firstname" maxlength="150" value="Enter name here"/>
+        Last Name
+        <input type="text" name="lasttname" maxlength="150" value="Enter name here"/>
+   
+    
+        <table class="center">
+            <tr><td rowspan="2"> Choose Subject Matter </td><td><input type="checkbox" name="p" value="Images" /> Question</td></tr> <tr><td> <input type="checkbox" name="D" value="CSS"/> Reccomendation </td></tr>
+           
+        
+        </table>
+    <br>
+        Please leave your comment here ?
+        <BR>
+            <textarea name="comments" rows= "5" cols="80" ></textarea>
+            <p style="text-align:left">
+
+                <p>Would you like to recieve our digital newletters?
+                    <select name = "D1">
+                    <option value="A">Yes</option>
+                    <option value="B">No</option>
+                   
+            
+                </select></p>
+
+                <input type="submit" value="Submit" name="Send Mail" />
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+               
+            </form>
+  </div>
+
+  <div class="footer">
+    <table>
+        <tr>
+          <th>AthensFoodGod</th>
+          <th>Quick Links</th>
+          <th>Audio</th>
+        </tr>
+        <tr>
+          <td>"Nothing brings people together 
+              life good FOOD"</td>
+          <td><a href="Contact.html">Contact</a></td>
+            <td><audio src="audio.mp3" controls></audio>
+            </td>
+        </tr>
+        <tr>
+            <!---Connect to the right page in release 2-->
+          
+          <td colspan="3"><a href="Contact.html">Credits</a></td>
+        </tr>
+        <tr>
+          <td colspan="3">Social Media Icons Insert Here</td>
+        </tr>
+      </table>
+      </div>
+</body>
+</html>
