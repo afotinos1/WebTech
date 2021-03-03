@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<html>
+		<!--Used class templete and got 1-3 of the in class activity initially working as we corrected the mistakes together in class. After when attempting the challenge, everything would get submitted regardless of working before and I was not sure how to go about from here. -->
+		<!--I assumed that for grad year we would need to edit the forms to I added an imput= number right after last name with an id to make the script work. -->
+		<head>
+			<title>MIS3690 Survey</title>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+			<script type="text/javascript">
+				function processForm()
+				{ 
+					var jsimages = document.getElementById("images")
+					var jscss = document.getElementById("css")
+					var jstables = document.getElementById("tables")
+					var jsforms = document.getElementById("forms")
+			
+					if (jsimages.checked == false && jscss.checked == false && jstables.checked == false && jsforms.checked == false)
+				{
+					alert("CHECK MISSING BOX");
+					
+					}
+					else if (document.getElementById("fname").value=="")
+					{
+						alert("First name is required");
+						document.getElementById("fname").focus();
+					}
+					else if (document.getElementById("lname").value=="")
+					{
+						alert("Last name is required");
+						document.getElementById("lname").focus();
+
+					}
+
+						else if (document.getElementById("gradyear").value == "")
+						
+						{
+							alert("Graduation date is invalid")
+							document.getElementById("gradyear").focus();
+					}
+
+						else if (document.getElementById("gradyear") < 2020 or the value is greater then 2025)
+
+				
+					
+					else
+					{
+						return true;
+					}
+					return false;
+				}
+			
+			</script>
+		</head>
+		<body>
+			<h1>MIS3690 Student Survey</h1>	
+			<p>Please complete the following survey.  You must answer each question.  When you are done,
+				please click on the Submit button.
+			</p>
+			
+
+			<form method="post"  action="http://wtspring13sec2.babson.edu/gordon/mailer.php"
+				id="form1" onsubmit="return processForm()">
+				<p>First name: 
+					<input type="text" name="fname" size="15" maxlength="20" id="fname"/>
+					Last name: 
+					<input type="text" name="lname" size="15" maxlength="30" id="lname"/>
+					Graduation Year : 
+					<input type="number" size="15" maxlength="20" id="gradyear"/>
+
+				</p>
+				</p>
+				<p>Gender: Male <input type="radio" name="gender" value="M" />
+					Female <input type="radio" name="gender" value="F" />
+				</p>
+
+			
+			<p>What grade do you expect to receive? 
+				<select name="grade">
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+					<option value="D">D</option>
+					<option value="F">F</option>
+				</select>
+			</p>
+			<p>Which chapters did you find to be fun?&nbsp;&nbsp;&nbsp;
+				Images <input type="checkbox" id="images" name="images" value="i" />&nbsp;&nbsp;&nbsp;&nbsp;  
+				CSS <input type="checkbox" id="css" name="css" value="fr" />&nbsp;&nbsp;&nbsp;&nbsp;
+				Tables <input type="checkbox" id="tables" name="tables" value="m" />&nbsp;&nbsp;&nbsp;&nbsp;
+				Forms <input type="checkbox" id="forms" name="forms" value="fo" />
+			</p>
+			<p>Please add any comments you have<br /><textarea name="comments" cols="40" rows="4"></textarea>
+			</p>
+			<p style="text-align:center">
+				<input type="submit" name="submit" value="Submit">&nbsp;&nbsp;
+				<input type="reset" name="reset" value="Reset" />
+			</p>
+			</form>
+		</body>
+		</html>
+		
+
+	
