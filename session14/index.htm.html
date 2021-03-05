@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 14</title>
+    
+    <style>
+      #CatchMeIfYouCan {position: absolute;top:0px; left:0px}   
+    </style>
+    <script>
+        function changename()
+        {var rand1=Math.floor(Math.random()*500)
+            var rand2=Math.floor(Math.random()*500)
+            document.getElementById("CatchMeIfYouCan").style.left = rand2+"px";
+            document.getElementById("CatchMeIfYouCan").style.top = rand1+"px";
+            var changename = new Array("Hi There","Ops Now I Am Here", "Haha", "This is Fun", "Good Job");
+            var b = document.getElementById("CatchMeIfYouCan");
+            b.innerHTML = changename[Math.floor(Math.random()*5)];
+
+        
+        }
+    </script>
+</head>
+<body>
+    
+   <button id="CatchMeIfYouCan" onclick="changename()" >CLICK HERE!</button> 
+        </body>
+        </html>
