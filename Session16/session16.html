@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="color: #04fc42;">Mini Fun Activity : </h1>
+<img id="picture" src="Capture.PNG" alt="pic" width="500" height="500">
+
+<p><b>Canvas to fill:</b></p>
+<canvas id="myCanvas" width="550" height="550"
+style="border:5px solid #04fc42;"></canvas>
+
+
+<p><button onclick="myCanvas()">Press Button</button></p>
+
+<script>
+function myCanvas() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("picture");
+  ctx.drawImage(img,10,10);
+  
+}
+</script>
+
+</body>
+</html>
+<!--(Ref. W3)-->
