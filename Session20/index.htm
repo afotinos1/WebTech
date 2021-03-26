@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Page title goes here</title>
+
+	<style>
+	table {border-style: solid;}
+	</style>
+	
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script>
+
+$(document).ready(function(){
+  $("#s").click(function(){
+    $("#odd1","#odd2").hide();
+  });
+  $("#h").click(function(){
+    $("#t").show();
+  });
+});
+
+	
+	/* Your additional JavaScript goes here */
+	</script>
+  </head>
+
+  <body>
+<table id="t">  
+	<tr><td>Lions</td></tr>
+	<span id="odd1"><tr><td>Tigers</td></tr></span>
+	<tr><td>Bears</td></tr>
+	<span id="odd2"><tr><td>Exams</td></tr></span>
+
+	</table>
+
+	<button id="s">Show All</button>
+	<button id="h">Hide Odd</button>
+
+
+
+
+
+	
+	
+	
+	</body>
+</html>
