@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#p1").click(function(){
+    $("#p2").slideUp("slow");
+  });
+});
+
+$(document).ready(function(){
+$("#btn2").click(function(){
+  $("ol").append("<li>Traveling</li>");
+});
+});
+
+
+$(function(){
+	   $("#buttonAfter").click(function(){
+		$("h3").after("<p>11</p>")
+		})
+
+	   $("#buttonBefore").click(function(){
+		$("h3").before("<p>3</p>")
+		})
+	});
+	
+    $(document).ready(function(){
+  $("button").click(function(){
+    $("h1, h3").removeClass("blue");
+  });
+});
+
+$(document).ready(function(){
+  $("#button2").click(function(){
+    $("div").animate({left: '350px'});
+  });
+});
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").delay("slow").fadeIn();
+    $("#div2").delay("fast").fadeIn();
+    $("#div3").delay(800).fadeIn();
+    $("#div4").delay(2000).fadeIn();
+    $("#div5").delay(4000).fadeIn();
+  });
+});
+
+</script>
+
+<style> 
+#p2, #p1 {
+  padding: 5px;
+  text-align: center;
+  background-color: hsl(323, 90%, 44%);
+  border: solid 1px hsl(323, 90%, 44%);
+}
+
+#p2 {
+  padding: 50px;
+}
+
+.blue {
+  color: rgb(255, 0, 200);
+}
+
+
+</style>
+</head>
+<body>
+ 
+<div id="p1" >CLICK HERE TO LEARN MORE ABOUT ME !</div>
+<div id="p2">
+   
+<p><b>Things I like</b> </p>
+
+<ol>
+  <li>Cooking</li>
+  <li>Cleaning</li>
+  <li>Singing </li>
+</ol>
+
+<button id="btn2">Click here to see more items of the list!</button>
+
+</div>
+
+<br>
+
+	<h1 class="blue">Lets play a game guess a game guess what number I am thinking about thats bigger than 10 and smaller than 10</h1>
+	<h3 class="blue">Click the buttoms to guess the number</h3>
+	<p><button id="buttonBefore">Less than 10 </button>
+	<button id="buttonAfter">More than 10</button></p>
+    <button>See the Text in Black</button>
+
+    <br>
+    <br>
+    <br>
+
+    <div style="background:#e229a5;height:100px;width:200px;position:absolute;">
+        <p> CLick Change Text First and then Start the Game</p>
+        <button id="button2">FUN ANIMATION</button>
+        
+        </div>
+     
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+<div>
+        <button> Game is almost over : Activate Countdown</button>
+        <div id="div1" style="width:90px;height:90px;display:none;background-color:rgb(247, 1, 255);">1</div><br>
+        <div id="div2" style="width:90px;height:90px;display:none;background-color:rgb(148, 37, 212);">2</div><br>
+        <div id="div3" style="width:90px;height:90px;display:none;background-color:rgb(117, 2, 102);">3</div><br>
+        <div id="div4" style="width:90px;height:90px;display:none;background-color:rgb(230, 57, 236);">4</div><br>
+        <div id="div5" style="width:90px;height:90px;display:none;background-color:purple;">5</div><br>
+</div>
+</body>
+</html>
+
