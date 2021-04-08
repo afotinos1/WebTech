@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AthensFoodGod - Discover new cusines avaialbe in Athens in different pricepoints" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <title>Contact Page</title>
+
+<style>
+    body, html {
+        height: 100%;
+        margin: 0%;
+        font-family:inherit;
+        text-align: center;
+      }
+    
+      .content {
+      max-width: 2000px;
+      margin: auto;
+      background: white;
+      padding: 10px;
+    }
+
+    .center {
+  margin-left: auto;
+  margin-right: auto;
+}   
+
+input[type=submit] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color:rgb(230, 21, 21);
+  color: white;
+}
+
+.footer {
+   position:static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+table, th, td {
+  padding: 20px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 20px;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+ 
+    </style>
+    </head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    function myFunction() {
+      document.getElementById("h1").innerHTML = "Share Your Thoughts !";
+    }
+
+    function selectBGcolor() 
+	{
+		var colors = new Array("green","yellow","blue","pink","red","orange");
+		document.getElementById("h1").style.color=colors[Math.floor(Math.random()*colors.length)];
+	}
+
+  $(document).ready(function(){
+  $("#jq1").mouseenter(function(){
+    alert("We send monthly newsletters that you can unsubscribe from at any point!");
+  });
+});
+
+function validateForm() {
+  var x = document.forms["myForm"]["firstname"].value;
+  if (x == "") {
+    alert("First name is required");
+    return false;
+  }
+  var y=document.forms["myForm"]["lasttname"].value;
+  {
+if (y==null || y=="")
+  alert("Last name is required");
+  return false;
+  }
+}
+
+    </script>
+    
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.htm" class="w3-bar-item w3-button"><b>Athens</b> Food God.</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right">
+        <a href="Souvlaki.html" class="w3-bar-item w3-button">Souvlaki</a>
+        <a href="Burgers.html" class="w3-bar-item w3-button">Burgers</a>
+        <a href="Pizza.html" class="w3-bar-item w3-button">Pizza</a>
+        <a href="Japanese.html" class="w3-bar-item w3-button">Japanese </a>
+        <a href="Italian.html" class="w3-bar-item w3-button">Italian  </a>
+        <a href="Chinese.html" class="w3-bar-item w3-button">Chinese </a>
+        <a href="Mexican.html" class="w3-bar-item w3-button">Mexican</a>
+        <a href="Greek.html" class="w3-bar-item w3-button">Greek </a>
+        <a href="Vegan.html" class="w3-bar-item w3-button">Vegan</a>
+        <a href="Unique-HomePage.html" class="w3-bar-item w3-button">Unique</a>
+        <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>
+        <a href="About.html" class="w3-bar-item w3-button">About</a>
+        
+      </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <!--Form Starts Here -->
+  <div class="content">
+  <h1 id="h1" onmouseover=" myFunction()">CONTACT</h1>
+  <hr style="height:2px; margin: auto; width:2px;border-color:red;background-color:red;width:50%"> <p>We Would 	&#9829; To Hear From You!</p>
+  </div>
+
+  <div class="Form" >
+    
+    <form method="post"action="mailer.php" name="myForm" onsubmit="return validateForm()">
+      
+        <p>If you would like to reach out to us <b>PLEASE DO</b>! Feel free to ask any questions about the restaurants or website. We love to hear feedback from users about the restaurants or reccomendations about hidden gems in Athens!</p>
+    <p>First Name
+        <input type="text" name="firstname"id="fname" maxlength="150" />
+        Last Name
+        <input type="text" name="lasttname" maxlength="150" id="lname"/>
+   
+    
+        <table class="center">
+            <tr><td rowspan="2"> Choose Subject Matter </td><td><input type="checkbox" name="p" value="Images" /> Question</td></tr> <tr><td> <input type="checkbox" name="D" value="CSS"/> Reccomendation </td></tr>
+           
+        
+        </table>
+    <br>
+        Please leave your comment here ?
+        <BR>
+            <textarea name="comments" rows= "5" cols="80"></textarea>
+            <p style="text-align:left">
+
+                <p id="jq1" >Would you like to recieve our digital newletters?
+                    <select name = "D1">
+                    <option value="A">Yes</option>
+                    <option value="B">No</option>
+                   
+            
+                </select></p>
+
+                <input type="submit" name="submit" value="Submit" >&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <!--The form will validate and show the alerts but the final click to submit works whenever it feels like it, it shows that its connectred to mailer.php but depending on the moment it doesnt lead to a new page that says submit I am not sure why-->
+              
+            </form>
+  
+
+  <div class="footer">
+    <table>
+        <tr>
+          <th>AthensFoodGod</th>
+          <th>Quick Links</th>
+          <th>Audio</th>
+        </tr>
+        <tr>
+          <td>"Nothing brings people together 
+              life good FOOD"</td>
+          <td><a href="Contact.html">Contact</a></td>
+            <td><audio src="audio.mp3" controls></audio>
+            </td>
+        </tr>
+        <tr>
+            <!---Connect to the right page in release 2-->
+          
+          <td colspan="3"><a href="Credits.htm">Credits</a></td>
+        </tr>
+        <tr>
+          <td colspan="3">Social Media Icons Insert Here</td>
+        </tr>
+      </table>
+      </div>
+</body>
+</html>
